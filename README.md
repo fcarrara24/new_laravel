@@ -49,3 +49,10 @@ git push -u origin main
 
 
 ```
+
+# creo nuova reo da template
+# clono 
+composer install
+copia .env.example in .env
+php artisan key:generate
+npm install

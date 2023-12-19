@@ -12,3 +12,9 @@ $fa-font-path: "../webfonts" !default;
 h1 {
     color: $text-color;
 }
+
+main{
+    background-image: url("../img/backpage.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}

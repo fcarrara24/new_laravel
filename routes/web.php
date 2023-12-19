@@ -14,5 +14,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    $products = config('db.pasta');
+    /*dd($products);*/ /*-- dump and die (fa il var dump e muore*/ // per passare il prodotto ho bisogno di farlo tramite array associativo
+    return view('home', compact('products'));
+});
+
+Route::get('/recipes', function () {
+    $recipes = config('db.recipes');
+    /*dd($products);*/ /*-- dump and die (fa il var dump e muore*/ // per passare il prodotto ho bisogno di farlo tramite array associativo
+    return view('home', compact('recipes'));
 });
